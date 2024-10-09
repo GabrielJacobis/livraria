@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddTituloToLivrosTable extends Migration
+class AddGeneroToLivrosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddTituloToLivrosTable extends Migration
     public function up()
     {
         Schema::table('livros', function (Blueprint $table) {
-            $table->string('isbn')->nullable()->after('titulo');
+            $table->string('genero')->nullable()->after('isbn');
         });
     }
 
@@ -26,7 +26,7 @@ class AddTituloToLivrosTable extends Migration
     public function down()
     {
         Schema::table('livros', function (Blueprint $table) {
-            $table->dropColumn('isbn');
+            $table->dropColumm('genero');
         });
     }
 }

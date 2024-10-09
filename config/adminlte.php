@@ -64,8 +64,8 @@ return [
     */
 
     'logo' => '<b>Biblioteca Dev<br>',
-    'logo_img' => '<link rel="apple-touch-icon" sizes="57x57" href="public/favicons/apple-icon-57x57.png">',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
+    'logo_img' => '<src="public/img/logo.png">',
+    //'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'Logo',
@@ -84,9 +84,9 @@ return [
     */
 
     'auth_logo' => [
-        'enabled' => false,
+        'enabled' => true,
         'img' => [
-            'path' => 'public/img/logo.png',
+            'path' => '<link ref="public/img/logo.png">',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
